@@ -1,0 +1,269 @@
+*{
+	padding:0;
+	margin:0;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;	
+box-sizing: border-box;
+
+}
+body{
+	background-color: #000000f2;
+}
+
+.side-nav 
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 100vh;
+	z-index: 111111111111;
+	text-align: center;
+	transition: all 0.6s ease;
+    background-color:rgba(42, 99, 153, 0.699);
+
+}
+.side-logo 
+{
+	padding:25px 0;
+}
+
+.side-logo img 
+{
+	height: 48px;
+}
+
+.side-toggel-menu
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.side-toggel-menu i 
+{
+	font-size: 25px;
+    color: rgba(255,255,255,0.9);
+}
+
+.side-social-icon
+{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 11;
+    color: rgba(255,255,255,0.9);
+
+}
+
+.nav-tab-menu 
+{
+	position: fixed;
+	top: 0;
+	left: 0px;
+	width: 250px;
+	height: 100vh;
+	z-index: 5555;
+    background-color: rgba(51, 91, 129, 0.39);
+    	transform: translateX(-100%);
+	transition: all 0.6s ease;
+
+}
+.nav-tab-menu  ul 
+{
+	padding-left: 30px;
+	height: 300px;
+	overflow: hidden;
+   text-align: center;
+   margin-right: 15px;
+}
+.nav-tab-menu  li 
+{
+	padding-top: 500px;
+	opacity: 0;
+}
+.nav-tab-menu ul li a 
+{
+	color: #f9f6f6;
+	font-weight: 500;
+	font-size: 22px;
+    text-transform: uppercase;
+
+}
+.nav-tab-menu ul li a:hover , .nav-social-item  a:hover
+{
+	color: #2255b3;
+	transition:all 0.3s;
+}
+.nav-social-item 
+{
+	position: absolute;
+	bottom: 50px;
+	left: 20px;
+}
+.nav-social-item  a 
+{
+	color: #f9f6f6;
+	padding-left: 15px;
+	font-size:20px;
+
+}
+
+.nav-social-item  span 
+{
+	color: #999;
+    font-size: 13px;
+}
+li 
+{
+	list-style: none !important; 
+}
+a 
+{
+	text-decoration: none !important;
+}
+i
+{
+	cursor: pointer;
+}
+.open-menu
+{
+	transform: scale(1) !important;
+}
+.close-menu
+{
+	transform: translateX(-100%) !important;
+}
+.close-search
+{
+	transform: translateX(100%) !important;
+}
+
+.search 
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(255,255,255,0.9);
+	transform: translateX(100%);
+	transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+	z-index: 9999999999999999999999;
+}
+.search .search-input
+{
+	position: absolute;
+	top: 300%;
+	left: 48%;
+	transform: translate(-50%,-50%);
+	border:none;
+	border-bottom: 2px solid #ddd;
+	width: 400px;
+	outline: none;
+	padding: 14px;
+	background-color: transparent;
+}
+::placeholder
+{
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+    color: rgb(255, 255, 255) !important;
+
+}
+.category
+{
+    display: block;
+     position: fixed;
+    top: 0px;
+    left: 0;
+}
+
+.layer
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(8, 8, 8, 0.7);
+    text-align: center;
+	color:rgb(252, 252, 252);
+	font-weight: 800;
+	transition: all 1s;
+}
+.home-p{
+    
+        color: #eeeeee;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        font-size: 40px;
+        text-transform: uppercase;
+        text-shadow: 5px 5px 5px  rgba(133, 133, 133, 0.9);
+}
+.movie
+
+{
+    overflow: hidden;
+    border-radius: 3rem !important;
+    box-shadow: 5px 5px 5px rgba(42, 99, 153, 0.432) !important;
+}
+.movie:hover .layer
+{
+	top: 0;
+	transition: all 1s;
+}
+
+@media (max-width:580px)
+{
+		.movie-desc
+	{
+		margin-left: 3.8rem!important;
+
+	}
+}
+
+
+.se{
+    border-radius: 20rem;
+    background-color: transparent !important;
+    color:rgb(42, 99, 153) !important;
+    font-size: 20px !important;
+  
+}
+
+.bg {
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("https://davescomputertips.com/wp-content/uploads/2016/03/Cinema-3d_haptics3d.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 100vh;
+   
+  }
+
+  .loading-text {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left:48%;
+  }
+  .serch-home{
+      position: relative;
+      top: 50%;
+      
+  }
+
+
+
+  
+#submitBtn{
+    width: 30% !important;
+    border-radius: 5rem;
+}
+
+  
+
+  
